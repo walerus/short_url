@@ -1,0 +1,86 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.before-start {
+    background-color: #ad1d28;
+    height: 40px;
+    font-size: 30px;
+    padding-left: 0;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.site_name {
+    padding-top: 10%;
+    font-size: 30px;
+    color: wheat;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.body_position {
+    font-size: 25px;
+    color: wheat;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.l_logo {
+    margin: 0 5px;
+    width: 27px;
+    vertical-align: baseline;
+    transform-origin: 50% center;
+    position: relative;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.error_msg, .error_long_url, .error_msg_u_ch_d, .ok_msg_u_ch_d, .ok_msg, .result_make_url_div {
+    display: none;
+}
+
+.result_row {
+    padding: 5px;
+}
+
+.clip_dotted {
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.container_stats {
+    background: rgba(95, 158, 160, 0.35);
+    border-radius: 5px;
+    padding: 20px 20px 5px;
+    margin-top: 20px;
+    margin-bottom: calc(100% - 96%);
+}
+
+.text_bg_head {
+    background: #ad1d28;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.text_bg_end {
+    margin-bottom: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.text_bg_stats {
+    background: darkcyan;
+}

@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+RewriteEngine On
+AddDefaultCharset UTF-8
+php_flag display_errors on
+
+DirectoryIndex index.php
+RewriteEngine On
+
+# Основной домен
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^([A-Za-z0-9_]+)$ /$1/ [R=301,L]
+RewriteRule ^([A-Za-z0-9_]+)/$ /index.php?short_url_code=$1 [NC,L]
